@@ -1,0 +1,43 @@
+<style>body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}</style>
+<!DOCTYPE html>
+<html lang="en">
+<head> <h1><center>EVENTS</center></h1>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <b1></b1>
+</head>
+<body>
+<ul>
+{% for e in eve%}
+
+                     <li><p><font size="10"><a href ="home/{{e.id}}">{{e.title}}</a></font> </p>
+
+                    <!--h><font size="10">{{e.title}}</font> </h>
+                    <h><font size="1"></font>{{e.date}} {{e.time}} </h>
+                    <h3><font size="3"></font>{{e.details}} </h3>
+                    <button type="button">comment</button>
+
+
+                    <!--form  method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Comment">
+                    </form-->
+                 </li>
+                {% endfor %}
+
+</ul>
+</body>
+</html>
